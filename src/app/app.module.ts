@@ -23,7 +23,9 @@ import { HomeComponent } from './home/home.component';
     FormsModule,
     HttpModule,
     RouterModule.forRoot([
-      {path: '', component: HomeComponent}
+      {path: '', component: HomeComponent},
+      {path: 'viewdiscussions', component: ViewDiscussionsComponent},
+      {path: 'addDiscussion', component: DiscussionFormComponent}
     ])
   ],
   providers: [],

@@ -1,9 +1,30 @@
 <div class="container">
-  <a>View Safety Discussions</a>
+  
   <div>
-    <table>
-
+    <table class="table table-striped table-bordered table-hover table-responsive">
+      <thead>
+        <tr>
+          <th>Observer</th>
+          <th>Date of Discussion</th>
+          <th>Location of Discussion</th>
+          <th>Colleague Discussion with</th>
+          <th>Subject of Discussion</th>
+          <th>Outcomes</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let data of discussionsData">
+          <td>{{data.Observer}}</td>
+          <td>{{data.DateOfDiscussion}}</td>
+          <td>{{data.LocationOfDiscussion}}</td>
+          <td>{{data.ColleagueDiscussionWith}}</td>
+          <td>{{data.Subject}}</td>
+          <td>{{data.Outcomes}}</td>
+        </tr>
+      </tbody>
     </table>
   </div>
+
+  <a routerLink="/addDiscussion">Add New Discussion</a>
 </div>
 

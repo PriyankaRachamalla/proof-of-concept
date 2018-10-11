@@ -1,5 +1,6 @@
 <div class="container">
-  <form>
+  <a routerLink="/viewdiscussions">View Safety Discussions</a>
+  <form id="discussionForm" name="DiscussionForm">
     <div class="formHead">
       <span>Create Discussion Form</span>
     </div>
@@ -13,7 +14,7 @@
         <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
           <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
             (click)="clearSuccess()" /> -->
-          <input type="text" name="observer" />
+          <input type="text" name="observer" id="observer" [(ngModel)]="observer"/>
         </div>
       </div>
       <div class="row">
@@ -25,7 +26,7 @@
         <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
           <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
             (click)="clearSuccess()" /> -->
-          <input type="text" name="observer" />
+          <input type="text" name="dateOfDiscussion" id="dateOfDiscussion" [(ngModel)]="dateOfDiscussion" />
         </div>
       </div>
       <div class="row">
@@ -37,7 +38,7 @@
         <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
           <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
             (click)="clearSuccess()" /> -->
-          <input type="text" name="observer" />
+          <input type="text" name="locationOfDiscussion" id="locationOfDiscussion" [(ngModel)]="locationOfDiscussion" />
         </div>
       </div>
       <div class="row">
@@ -49,7 +50,7 @@
         <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
           <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
             (click)="clearSuccess()" /> -->
-          <input type="text" name="observer" />
+          <input type="text" name="colleagueDiscussionWith" id="colleagueDiscussionWith" [(ngModel)]="colleagueDiscussionWith"/>
         </div>
       </div>
       <div class="row">
@@ -61,7 +62,7 @@
         <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
           <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
             (click)="clearSuccess()" /> -->
-          <input type="text" name="observer" />
+          <input type="text" name="subjectOfDiscussion" id="subjectOfDiscussion" [(ngModel)]="subjectOfDiscussion" />
         </div>
       </div>
       <div class="row">
@@ -73,9 +74,10 @@
         <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
           <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
             (click)="clearSuccess()" /> -->
-          <input type="text" name="observer" />
+          <input type="text" name="outcomes" id="outcomes" [(ngModel)]="outcomes" />
         </div>
       </div>
+      <button (click)="addDiscussion()">Add Discussion</button>
     </div>
   </form>
 </div>
