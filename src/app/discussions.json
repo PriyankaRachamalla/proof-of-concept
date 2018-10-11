@@ -1,0 +1,36 @@
+{
+    "discussions": [
+        {
+            "Observer": "x",
+            "DateOfDiscussion": "23/06/2018",
+            "LocationOfDiscussion": "Central",
+            "ColleagueDiscussionWith": "y",
+            "Subject": "Road safety",
+            "Outcomes": "Succeeded"
+        },
+        {
+            "Observer": "x1",
+            "DateOfDiscussion": "23/06/2018",
+            "LocationOfDiscussion": "Central",
+            "ColleagueDiscussionWith": "y1",
+            "Subject": "Road safety",
+            "Outcomes": "Succeeded"
+        },
+        {
+            "Observer": "x2",
+            "DateOfDiscussion": "23/06/2018",
+            "LocationOfDiscussion": "Central",
+            "ColleagueDiscussionWith": "y2",
+            "Subject": "Road safety",
+            "Outcomes": "Succeeded"
+        },
+        {
+            "Observer": "x3",
+            "DateOfDiscussion": "23/06/2018",
+            "LocationOfDiscussion": "Central",
+            "ColleagueDiscussionWith": "y3",
+            "Subject": "Road safety",
+            "Outcomes": "Succeeded"
+        }
+    ]
+}
