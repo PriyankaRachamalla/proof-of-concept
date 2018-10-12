@@ -5,6 +5,7 @@
     float: left;
     margin: 10px;
 }
+
 .row{
     margin-bottom: 10px !important;
 }
@@ -27,7 +28,51 @@ a{
 }
 button{
     margin-left: 20px;
+    font-weight: bold;
+    background: beige;
+    border: 2px solid #c9c9c9;
+    border-radius: 15px;
+    width: 15%;
+    padding: 6px 20px;
 }
 input{
     width: 60%;
+}
+.successMessage{
+    color: green;
+    font-size: 24px;
+    font-weight: bold;
+    margin-left: 20px;
+}
+.red{
+    color: red;
+}
+.errorMessage{
+    margin-left: 20px;
+    color: red;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+/deep/ .bs-datepicker-container{
+    padding: 0px !important;
+}
+
+
+/* Tablet Styles */
+
+@media (min-width:768px) and (max-width:1023px){ 
+    .discussionForm{
+        width: 98%;
+    }
+    button{
+        width: 25%;
+        padding: 6px 20px;
+    }
+    /deep/ bs-datepicker-container{
+        left: 270px !important;
+    }
+    .discussionFormDiv{
+        overflow: hidden;
+    }
 }

@@ -1,84 +1,85 @@
-<div class="container">
+<div class="discussionFormDiv">
   <a routerLink="/viewdiscussions">View Safety Discussions</a>
-  <form id="discussionForm" name="DiscussionForm" class="discussionForm">
+  <form id="discussionForm" autocomplete="off" name="DiscussionForm" class="form discussionForm" >
     <div class="formHead">
       <h3>Create Discussion Form</h3>
     </div>
     <div class="formBody">
-      <div class="row">
-        <div class="frmLbls">
+      <div class="row col-sm-12 form-group">
+        <div class="frmLbls col-sm-4">
           <label>The Observer
-            <!-- <span *ngIf="formElements?.firstName?.isMandatory" class="red">*</span> -->
+            <span class="red">*</span>
           </label>
         </div>
-        <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
-          <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
-            (click)="clearSuccess()" /> -->
-          <input type="text" name="observer" id="observer" [(ngModel)]="observer"/>
+        <div class="col-sm-8">
+          
+          <input type="text" class="form-control" name="observer" id="observer" [(ngModel)]="observer"/>
         </div>
       </div>
-      <div class="row">
-        <div class="frmLbls">
+      <div class="row form-group">
+        <div class="frmLbls col-sm-4">
           <label>Date of Discussion
-            <!-- <span *ngIf="formElements?.firstName?.isMandatory" class="red">*</span> -->
+            <span class="red">*</span>
           </label>
         </div>
-        <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
-          <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
-            (click)="clearSuccess()" /> -->
-          <input type="text" name="dateOfDiscussion" id="dateOfDiscussion" [(ngModel)]="dateOfDiscussion" />
+        <div class="col-sm-8">
+          
+<input type="text"
+           placeholder="Datepicker"
+           class="form-control" [(ngModel)]="dateOfDiscussion"  name="dateOfDiscussion"
+           bsDatepicker />
         </div>
       </div>
-      <div class="row">
-        <div class="frmLbls">
+      <div class="row form-group">
+        <div class="frmLbls col-sm-4">
           <label>Location of Discussion
-            <!-- <span *ngIf="formElements?.firstName?.isMandatory" class="red">*</span> -->
+            <span class="red">*</span>
           </label>
         </div>
-        <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
-          <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
-            (click)="clearSuccess()" /> -->
-          <input type="text" name="locationOfDiscussion" id="locationOfDiscussion" [(ngModel)]="locationOfDiscussion" />
+        <div class="col-sm-8">
+          
+          <input type="text" class="form-control" name="locationOfDiscussion" id="locationOfDiscussion" [(ngModel)]="locationOfDiscussion" />
         </div>
       </div>
-      <div class="row">
-        <div class="frmLbls">
+      <div class="row form-group">
+        <div class="frmLbls col-sm-4">
           <label>Colleague the discussion was with
-            <!-- <span *ngIf="formElements?.firstName?.isMandatory" class="red">*</span> -->
+            <span class="red">*</span>
           </label>
         </div>
-        <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
-          <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
-            (click)="clearSuccess()" /> -->
-          <input type="text" name="colleagueDiscussionWith" id="colleagueDiscussionWith" [(ngModel)]="colleagueDiscussionWith"/>
+        <div class="col-sm-8">
+          
+          <input type="text" class="form-control" name="colleagueDiscussionWith" id="colleagueDiscussionWith" [(ngModel)]="colleagueDiscussionWith"/>
         </div>
       </div>
-      <div class="row">
-        <div class="frmLbls">
+      <div class="row form-group">
+        <div class="frmLbls col-sm-4">
           <label>Subject of discussion
-            <!-- <span *ngIf="formElements?.firstName?.isMandatory" class="red">*</span> -->
+            <span class="red">*</span>
           </label>
         </div>
-        <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
-          <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
-            (click)="clearSuccess()" /> -->
-          <input type="text" name="subjectOfDiscussion" id="subjectOfDiscussion" [(ngModel)]="subjectOfDiscussion" />
+        <div class="col-sm-8">
+          
+          <input type="text" class="form-control" name="subjectOfDiscussion" id="subjectOfDiscussion" [(ngModel)]="subjectOfDiscussion" />
         </div>
       </div>
-      <div class="row">
-        <div class="frmLbls">
+      <div class="row form-group">
+        <div class="frmLbls col-sm-4">
           <label>Outcomes
-            <!-- <span *ngIf="formElements?.firstName?.isMandatory" class="red">*</span> -->
+            <span class="red">*</span>
           </label>
         </div>
-        <div [ngClass]="{ 'frmInputs': true, 'has-error': formElements?.firstName?.hasError}">
-          <!-- <input type="text" name="firstName" [(ngModel)]="formElements.firstName.value" autocomplete="off" required tabindex="2" maxlength="50"
-            (click)="clearSuccess()" /> -->
-          <input type="text" name="outcomes" id="outcomes" [(ngModel)]="outcomes" />
+        <div class="col-sm-8">
+          
+          <input type="text" class="form-control" name="outcomes" id="outcomes" [(ngModel)]="outcomes" />
         </div>
       </div>
-      <div class="row">
-        <button (click)="addDiscussion()">Add Discussion</button>
+      <div class="row form-group">
+        <button class="form-control" (click)="addDiscussion()">Add Discussion</button>
+      </div>
+      <div class="row form-group">
+        <p class="errorMessage">{{errorMessage}}</p>
+        <p class="successMessage">{{successMessage}}</p>
       </div>
     </div>
   </form>
